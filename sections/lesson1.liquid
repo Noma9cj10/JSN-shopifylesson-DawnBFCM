@@ -1,7 +1,7 @@
 {{ 'lesson.css' | asset_url | stylesheet_tag }}
 <div class="page-width">
   
-  <h2>{{ section.settings.s-heading }}</h2>
+  <h2 class="kakunin">{{ section.settings.s-heading }}</h2>
 
   {% for block in section.blocks %}
     {% case block.type %}
