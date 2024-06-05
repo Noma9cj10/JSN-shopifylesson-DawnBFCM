@@ -152,6 +152,24 @@
     },
     "lesson1_imXUxz": {
       "type": "lesson1",
+      "blocks": {
+        "block1_DMkx4b": {
+          "type": "block1",
+          "settings": {
+            "block1-1": "block1の確認用テキスト"
+          }
+        },
+        "block1_ejfhWW": {
+          "type": "block1",
+          "settings": {
+            "block1-1": "変更確認"
+          }
+        }
+      },
+      "block_order": [
+        "block1_DMkx4b",
+        "block1_ejfhWW"
+      ],
       "settings": {
         "s-heading": "HELLO!"
       }
