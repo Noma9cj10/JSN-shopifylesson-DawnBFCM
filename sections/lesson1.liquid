@@ -9,10 +9,10 @@
       {% when 'block2' %}
         <div class="grid">
           <div style="flex: 2;">
-                <!-- ここで画像を呼び出す-->
+                {{ block.settings.block2-img | img_url: 'master' }}
             </div>
             <div style="flex: 3;">
-                <!-- ここでテキストを呼び出す -->
+                {{ block.settings.block2-text }}
             </div>
         </div>
     {% endcase %}
