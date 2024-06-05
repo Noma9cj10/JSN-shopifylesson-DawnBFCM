@@ -1,10 +1,12 @@
 <div class="page-width">
+  
   <h2>{{ section.settings.s-heading }}</h2>
-</div>
 
-{% for block in section.blocks %}
-  {{ block.settings.block1-1 }}
-{% endfor %}
+  {% for block in section.blocks %}
+    {{ block.settings.block1-1 }}
+  {% endfor %}
+  
+</div>
 
 {% schema %}
   {
