@@ -181,6 +181,22 @@
       "settings": {
         "s-heading": "HELLO!"
       }
+    },
+    "featured_blog_slim_CmTTjy": {
+      "type": "featured-blog-slim",
+      "settings": {
+        "heading": "ブログ記事",
+        "heading_size": "h1",
+        "blog": "news",
+        "post_limit": 4,
+        "color_scheme": "",
+        "show_date": true,
+        "show_author": false,
+        "show_desc": false,
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -189,6 +205,7 @@
     "image_with_text_A4M9cf",
     "featured_collection",
     "featured_blog_WD4tFm",
-    "lesson1_imXUxz"
+    "lesson1_imXUxz",
+    "featured_blog_slim_CmTTjy"
   ]
 }
