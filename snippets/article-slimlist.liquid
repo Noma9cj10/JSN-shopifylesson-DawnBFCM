@@ -2,7 +2,7 @@
 
   {%- if show_date -%}
     <p class="col2list_heading">
-      {{ article.published_at | time_tag: format: 'date' }}
+       {{ article.published_at | time_tag: '%Y年%m月%d日' }}
     </p>
   {%- endif -%}
 
