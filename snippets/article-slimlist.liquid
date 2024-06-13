@@ -1,0 +1,32 @@
+{%- if article and article != empty -%}
+
+  {%- if show_date -%}
+    <p class="col2list_heading">
+       {{ article.published_at | time_tag: '%Y年%m月%d日' }}
+    </p>
+  {%- endif -%}
+
+  <div class="col2list_text">
+    <h3 class="card__heading{% if show_excerpt %} h2{% endif %}">
+      <a href="{{ article.url }}" class="full-unstyled-link">
+        {{ article.title | truncate: 50 | escape }}
+      </a>
+    </h3>
+
+    {%- if show_excerpt -%}
+      {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
+        <p class="col2list_text_excerpt">
+          {%- if article.excerpt.size > 0 -%}
+            {{ article.excerpt | strip_html | truncatewords: 30 }}
+          {%- else -%}
+            {{ article.content | strip_html | truncatewords: 30 }}
+          {%- endif -%}
+        </p>
+      {%- endif -%}
+    {%- endif -%}
+    {%- if show_author -%}
+      <p class="right">{{ article.author }}</p>
+    {%- endif -%}
+  </div>
+
+{%- endif -%}
